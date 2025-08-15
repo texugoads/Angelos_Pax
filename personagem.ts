@@ -6,8 +6,7 @@
     arma: string = "";
     manaAtual: number = 0;
     manaMaxima: number = 0;
-    vida: number = 0;
     vidaAtual: number = 0;
     vidaMaxima: number = 0;
-    poderAtaque: number =;
+    poderAtaque: number =0;
  }
