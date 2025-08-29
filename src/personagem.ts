@@ -1,3 +1,5 @@
+import {Util} from "./Util";
+ 
  export class personagem {
     nome: string ;
     classe: string ;
@@ -26,7 +28,14 @@
     }
  
  treinarPoderAtaque(): void {
-     this.poderAtaque += 3 + this.poderAtaque*1.1;
+
+     const incrementoDeTreino: number = Util.gerarNumeroAleatorio(5,15);
+     this.poderAtaque += incrementoDeTreino + this.poderAtaque * 1.1;
+
+     
+ }
+ estaVivo(){
+  return(this.vidaAtual > 0)
  }
  
 }

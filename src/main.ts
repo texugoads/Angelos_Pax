@@ -18,12 +18,14 @@ p.poderAtaque = 1;
 while(true){
 
     
-    console.log("+-------------MENU--------+")
-    console.log("|1.Treinar Poder de Ataque|")
-    console.log("|2.Ver status             |")
-    console.log("|9. Sair                  |")
-    console.log("+-------------------------+")
-    console.log("Eu amo o David             ")
+    console.log("+---------------MENU---------------+")
+    console.log("|1.Treinar Poder de Ataque         |")
+    console.log("|2.Ver status                      |")
+    console.log("|3.Checar se  Personagem esta vivo |")
+    console.log("|4.Subir de Nivel                  |")
+    console.log("|9. Sair                           |")
+    console.log("+----------------------------------+")
+    console.log("Só Deus na Causa!                   ")
     
     const escolha: number = +teclado("escolha uma opçao do menu:")
     
@@ -38,11 +40,11 @@ while(true){
         case 2:
             console.table(p);
             break;
-            
-            default:
-                break;
-                console.log("Opção inválida, tente novamente.");
-            }
+
+        case 3: 
+        console.log(p.estaVivo()?"Personagem está vivo!":"pesonagem esta morto!");
+        break;
+    }
             
 }
 function treinarPoderAtaque(person: personagem): void {
